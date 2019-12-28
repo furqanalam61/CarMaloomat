@@ -13,30 +13,11 @@
 <ion-content>
   <ion-card class="welcome-card" *ngFor="let cars of cars">
     <ion-card-header>
-      <!-- <ion-card-subtitle>Get Started</ion-card-subtitle> -->
       <ion-card-title>{{cars?.name}}</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      <p>{{cars?.model}}</p>
-      
+      <p>{{cars?.model}}      {{cars?.engine}}      {{cars?.company}}     {{cars?.type}}</p>
     </ion-card-content>
   </ion-card>
 
 </ion-content>
-
-<!-- <ion-content>
-  <ion-list>
-    <ion-item *ngFor="let item of items">
-      <ion-icon [name]="item.icon" slot="start"></ion-icon>
-      {{item.title}}
-      <div class="item-note" slot="end">
-        {{item.note}}
-      </div>
-    </ion-item>
-  </ion-list>
-  
-    <div *ngIf="selectedItem" padding>
-      You navigated here from <b>{{selectedItem.title }}</b>
-    </div>
-  
-</ion-content> -->
