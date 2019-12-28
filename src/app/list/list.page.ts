@@ -14,7 +14,7 @@ export class ListPage implements OnInit {
   ngOnInit() {
     this.getAll();
   }
-
+//test
   getAll() {
     this.loading = true;
 
